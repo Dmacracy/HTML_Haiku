@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <style style="text/css">
+      div.slide-left {
+      width:100%;
+      overflow:hidden;
+      }
+      div.slide-left p {
+      animation: slide-left 3s;
+      }
+      
+      @keyframes slide-left {
+      from {
+      margin-left: 100%;
+      width: 300%; 
+      }
+      
+      to {
+      margin-left: 0%;
+      width: 100%;
+      }
+      }
+    </style>
+
+    <style style="text/css">
+      div.slide-left-long {
+      width:100%;
+      overflow:hidden;
+      }
+      div.slide-left-long p {
+      animation: slide-left 6s;
+      }
+      
+      @keyframes slide-left-long {
+      from {
+      margin-left: 100%;
+      width: 300%; 
+      }
+      
+      to {
+      margin-left: 0%;
+      width: 20%;
+      }
+      }
+    </style>
+
+
+    <style style="text/css">
+      .horizontally {
+      height: 50px;
+      overflow: hidden;	
+      position: relative;
+      }
+      .horizontally p {
+      position: absolute;
+      width: 170%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      -moz-transform:translateX(50%);
+      -webkit-transform:translateX(50%);	
+      transform:translateX(50%);
+      /* Apply animation to this element */	
+      -moz-animation: horizontally 15s linear infinite alternate;
+      -webkit-animation: horizontally 15s linear infinite alternate;
+      animation: horizontally 15s linear infinite alternate;
+      }
+      /* Move it (define the animation) */
+      @-moz-keyframes horizontally {
+      0%   { -moz-transform: translateX(20%); }
+      100% { -moz-transform: translateX(-40%); }
+      }
+      @-webkit-keyframes horizontally {
+      0%   { -webkit-transform: translateX(20%); }
+      100% { -webkit-transform: translateX(-40%); }
+      }
+      @keyframes horizontally {
+      0%   { 
+      -moz-transform: translateX(20%); /* Browser bug fix */
+      -webkit-transform: translateX(20%); /* Browser bug fix */
+      transform: translateX(20%); 		
+      }
+      100% { 
+      -moz-transform: translateX(-40%); /* Browser bug fix */
+      -webkit-transform: translateX(-40%); /* Browser bug fix */
+      transform: translateX(-40%); 
+      }
+      }
+    </style>
+
+
+    <div class="section">
+      <p> <b> <u> <font size="+15">Sipping Coffee </font> </u> </b> </p>
+    </div>
+
+    <div class="slide-left">
+      <p> <font size="+3"> A </font> <font size="-10"> small </font> <font size="+3"> 
+	  <sup> fly f<sup>l<sup>o<sup>at</sup>i</sup>n</sup>g</sup> </font> </p>
+    </div>
+
+    <div class="slide-left-long">
+      <p> <font size="+3"> On the <b> black</b>, <i> <sub> o <sub> i <sub> l <sub> y </i> </sub> </sub> </sub> </sub> <u>surface</u> </font> </p>
+    </div>
+    
+    <div class="horizontally">
+      <p> <font size="+3"> <i>Wind </i> drives its <b> <span style="color:red">dead</span> </b> sails. </font> </p>
+    </div>
+
+
+    
+  </body>
+</html>
+
+
+
